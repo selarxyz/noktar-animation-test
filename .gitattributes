@@ -1,0 +1,7 @@
+* text=auto eol=lf
+builds/web/** -text
+*.png -text
+*.jpg -text
+*.gz -text
+*.wasm -text
+*.pck -text
