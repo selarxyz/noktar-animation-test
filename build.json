@@ -1,13 +1,13 @@
 {
   "name": "noktar-animation-lab",
-  "version": "1.0-test.3",
+  "version": "1.0-test.4",
   "engine": "4.7.2",
   "renderer": "2D Compatibility",
   "threads": false,
   "files": {
     "index.html": {
       "bytes": 2030,
-      "sha256": "21556697a33a38425e383df93930f6867a197cf1fbff6a8dadde07f48a1e27ff"
+      "sha256": "d3ca7031971c5eac8a6a7b9c7cedbd468fbebc67690513b28acf871362d1501d"
     },
     "index.js": {
       "bytes": 279815,
@@ -18,8 +18,8 @@
       "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
     },
     "index.pck": {
-      "bytes": 727704,
-      "sha256": "fa6b42b320124e274a22b2ff8e0f61091be1a8fb86d1d634d00116785ad1232b"
+      "bytes": 774600,
+      "sha256": "f74a083e1136b298d040ce7c1e50637ed6c2f3299e20a5ca830f5c70dd02d31d"
     }
   }
 }
