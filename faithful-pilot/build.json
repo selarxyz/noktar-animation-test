@@ -1,0 +1,24 @@
+{
+  "name": "noktar-faithful-layers",
+  "version": "pilot.1",
+  "engine": "4.7.2",
+  "threads": false,
+  "files": {
+    "index.html": {
+      "bytes": 1904,
+      "sha256": "4bf7c2ad14f40ebf26695eea342eb4802a2b4cb7be11be9f6a9a690d9bf29608"
+    },
+    "index.js": {
+      "bytes": 279815,
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+    },
+    "index.wasm": {
+      "bytes": 39514754,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    },
+    "index.pck": {
+      "bytes": 788304,
+      "sha256": "8418fa34f63b2bff41bfda4650fbf00e13e14548cbe6afa10b16e9aa96e5fe55"
+    }
+  }
+}

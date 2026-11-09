@@ -5,3 +5,4 @@ builds/web/** -text
 *.gz -text
 *.wasm -text
 *.pck -text
+faithful-pilot/** -text
