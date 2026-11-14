@@ -2,57 +2,13 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#100e0c">
-  <title>Era Podziemia — Arena treningowa</title>
-  
-  <style>
-    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; overscroll-behavior: none; }
-    body { background: #100e0c; color: #f2e8d8; font: 16px system-ui, sans-serif; }
-    #game { position: fixed; inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
-    #canvas { display: block; width: 100%; height: 100%; outline: none; touch-action: none; }
-    #loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; text-align: center; padding: 20px; }
-    h1 { margin: 0; font-size: clamp(24px, 5vw, 38px); }
-    p { color: #c3b09a; max-width: 36rem; }
-    progress { width: min(250px, 75vw); height: 7px; accent-color: #ebba6a; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=https://erapodziemia-arena.onrender.com/">
+  <link rel="canonical" href="https://erapodziemia-arena.onrender.com/">
+  <title>Arena treningowa</title>
+  <script>location.replace('https://erapodziemia-arena.onrender.com/');</script>
 </head>
 <body>
-  <main id="game">
-    <canvas id="canvas" tabindex="0" aria-label="Arena treningowa">Gra wymaga przeglądarki obsługującej WebGL 2.</canvas>
-    <section id="loading" aria-live="polite">
-      <h1>Arena treningowa</h1>
-      <p id="message">Wczytywanie gry…</p>
-      <progress id="progress" max="100" aria-label="Postęp wczytywania"></progress>
-    </section>
-  </main>
-  <script src="duel-v1.js"></script>
-  <script>
-    const config = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"duel-v1","mainPack":"duel-v2.pck","experimentalVK":true,"fileSizes":{"duel-v2.pck":7336720,"duel-v1.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
-    const canvas = document.getElementById('canvas');
-    const loading = document.getElementById('loading');
-    const progress = document.getElementById('progress');
-    const engine = new Engine(config);
-    let lastPercent = -1;
-    canvas.addEventListener('contextmenu', event => event.preventDefault());
-    engine.startGame({
-      canvas,
-      onProgress(current, total) {
-        if (!total) return;
-        const percent = Math.round(current * 100 / total);
-        if (percent === lastPercent) return;
-        lastPercent = percent;
-        progress.value = percent;
-      },
-    }).then(() => {
-      loading.remove();
-      document.documentElement.dataset.game = 'ready';
-    }).catch(error => {
-      document.getElementById('message').textContent = 'Nie udało się uruchomić gry. ' + error.message;
-      progress.hidden = true;
-      document.documentElement.dataset.game = 'error';
-    });
-  </script>
+  <p><a href="https://erapodziemia-arena.onrender.com/">Otwórz aktualną Arenę treningową</a></p>
 </body>
 </html>
-
